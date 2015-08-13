@@ -12,18 +12,7 @@
 		A60B6E3C1B33AC1F007BD2A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A60B6E3A1B33AC1F007BD2A4 /* Main.storyboard */; };
 		A60B6E3E1B33AC1F007BD2A4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A60B6E3D1B33AC1F007BD2A4 /* Images.xcassets */; };
 		A60B6E411B33AC1F007BD2A4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A60B6E3F1B33AC1F007BD2A4 /* LaunchScreen.xib */; };
-		A60B6E4D1B33AC1F007BD2A4 /* MarcaDaguaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60B6E4C1B33AC1F007BD2A4 /* MarcaDaguaTests.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		A60B6E471B33AC1F007BD2A4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A60B6E291B33AC1F007BD2A4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A60B6E301B33AC1F007BD2A4;
-			remoteInfo = MarcaDagua;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		A60B6E311B33AC1F007BD2A4 /* MarcaDagua.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarcaDagua.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -33,20 +22,12 @@
 		A60B6E3B1B33AC1F007BD2A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A60B6E3D1B33AC1F007BD2A4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A60B6E401B33AC1F007BD2A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		A60B6E461B33AC1F007BD2A4 /* MarcaDaguaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarcaDaguaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A60B6E4B1B33AC1F007BD2A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A60B6E4C1B33AC1F007BD2A4 /* MarcaDaguaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarcaDaguaTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A60B6E2E1B33AC1F007BD2A4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A60B6E431B33AC1F007BD2A4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -69,7 +50,6 @@
 			isa = PBXGroup;
 			children = (
 				A60B6E311B33AC1F007BD2A4 /* MarcaDagua.app */,
-				A60B6E461B33AC1F007BD2A4 /* MarcaDaguaTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -132,24 +112,6 @@
 			productReference = A60B6E311B33AC1F007BD2A4 /* MarcaDagua.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A60B6E451B33AC1F007BD2A4 /* MarcaDaguaTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A60B6E531B33AC1F007BD2A4 /* Build configuration list for PBXNativeTarget "MarcaDaguaTests" */;
-			buildPhases = (
-				A60B6E421B33AC1F007BD2A4 /* Sources */,
-				A60B6E431B33AC1F007BD2A4 /* Frameworks */,
-				A60B6E441B33AC1F007BD2A4 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A60B6E481B33AC1F007BD2A4 /* PBXTargetDependency */,
-			);
-			name = MarcaDaguaTests;
-			productName = MarcaDaguaTests;
-			productReference = A60B6E461B33AC1F007BD2A4 /* MarcaDaguaTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -161,10 +123,7 @@
 				TargetAttributes = {
 					A60B6E301B33AC1F007BD2A4 = {
 						CreatedOnToolsVersion = 6.2;
-					};
-					A60B6E451B33AC1F007BD2A4 = {
-						CreatedOnToolsVersion = 6.2;
-						TestTargetID = A60B6E301B33AC1F007BD2A4;
+						DevelopmentTeam = 945H5JWKCT;
 					};
 				};
 			};
@@ -182,7 +141,6 @@
 			projectRoot = "";
 			targets = (
 				A60B6E301B33AC1F007BD2A4 /* MarcaDagua */,
-				A60B6E451B33AC1F007BD2A4 /* MarcaDaguaTests */,
 			);
 		};
 /* End PBXProject section */
@@ -198,13 +156,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A60B6E441B33AC1F007BD2A4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -217,23 +168,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A60B6E421B33AC1F007BD2A4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A60B6E4D1B33AC1F007BD2A4 /* MarcaDaguaTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		A60B6E481B33AC1F007BD2A4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A60B6E301B33AC1F007BD2A4 /* MarcaDagua */;
-			targetProxy = A60B6E471B33AC1F007BD2A4 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A60B6E3A1B33AC1F007BD2A4 /* Main.storyboard */ = {
@@ -336,9 +271,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MarcaDagua/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -346,43 +284,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MarcaDagua/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		A60B6E541B33AC1F007BD2A4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = MarcaDaguaTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarcaDagua.app/MarcaDagua";
-			};
-			name = Debug;
-		};
-		A60B6E551B33AC1F007BD2A4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = MarcaDaguaTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarcaDagua.app/MarcaDagua";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -405,14 +312,7 @@
 				A60B6E521B33AC1F007BD2A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		A60B6E531B33AC1F007BD2A4 /* Build configuration list for PBXNativeTarget "MarcaDaguaTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A60B6E541B33AC1F007BD2A4 /* Debug */,
-				A60B6E551B33AC1F007BD2A4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

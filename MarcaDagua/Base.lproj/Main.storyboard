@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="MarcaDagua" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +16,64 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IPk-ea-JK4">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="513"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="uxf-Gp-HgW" appends="YES" id="dKx-AS-yyd"/>
+                                </connections>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I6L-hX-Zfy">
+                                <rect key="frame" x="278" y="527" width="44" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="Qb4-Yn-Xr3"/>
+                                    <constraint firstAttribute="width" constant="44" id="uX1-42-PYJ"/>
+                                </constraints>
+                                <state key="normal" image="instagram10">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tirarFoto:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="gKC-9V-Xje"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tirar Foto" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uE7-F8-A9O">
+                                <rect key="frame" x="263" y="574" width="75" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="POt-aI-YoT"/>
+                                    <constraint firstAttribute="width" constant="75" id="bNi-bu-b6b"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="I6L-hX-Zfy" secondAttribute="centerX" id="BTF-c4-N6u"/>
+                            <constraint firstItem="I6L-hX-Zfy" firstAttribute="top" secondItem="IPk-ea-JK4" secondAttribute="bottom" constant="14" id="JAU-X1-JcA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="IPk-ea-JK4" secondAttribute="trailing" constant="-16" id="PLj-JT-1Xk"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="uE7-F8-A9O" secondAttribute="bottom" constant="5" id="cmO-48-5ED"/>
+                            <constraint firstItem="IPk-ea-JK4" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="fMY-3K-VFl"/>
+                            <constraint firstAttribute="centerX" secondItem="uE7-F8-A9O" secondAttribute="centerX" id="hbU-Mr-e3m"/>
+                            <constraint firstItem="uE7-F8-A9O" firstAttribute="top" secondItem="I6L-hX-Zfy" secondAttribute="bottom" id="iY3-bt-Gvg"/>
+                            <constraint firstItem="IPk-ea-JK4" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="xIl-s0-IM8"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageViewFoto" destination="IPk-ea-JK4" id="v8s-jY-kBx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.59999999999999998" id="uxf-Gp-HgW">
+                    <connections>
+                        <action selector="longPressImage:" destination="vXZ-lx-hvc" id="Iro-YP-CVq"/>
+                    </connections>
+                </pongPressGestureRecognizer>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="instagram10" width="64" height="64"/>
+    </resources>
 </document>
